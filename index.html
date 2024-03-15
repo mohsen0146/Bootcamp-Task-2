@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>2nd Task</title>
+  </head>
+  <body>
+    <header>
+      <h1>Second Task</h1>
+    </header>
+    <section class="container">
+      <div class="form-container">
+        <form class="search-form">
+          <input type="text" class="search-input" />
+          <button class="add-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <button class="refresh">
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+        <div class="select">
+          <select name="notes" class="filter-notes">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+        <div class="sort">
+          <select name="" class="sort-by-data">
+            <option value="earliest">Earliest</option>
+            <option value="latest">Latest</option>
+          </select>
+        </div>
+      </div>
+      <div class="note-container">
+        <ul class="noteList">
+          <!-- <li class="note">
+            <p class="note__title">Hello</p>
+            <div class="notelist__details">
+            <span class="note__createdAt">${new Date(note.createdAt).toLocaleDateString("fa-IR")}</span>
+            </div></li> -->
+        </ul>
+      </div>
+    </section>
+
+   <script src="./app.js"></script> 
+  </body>
+</html>
+
